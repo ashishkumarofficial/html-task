@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<script>
+  var a,r,sq,sum=0;
+   for(a=1;a<=100;a++){    
+    sq=a*a;
+     while(sq>0){
+      r=sq%10;
+      sum=sum+r;
+      sq=parseInt(sq/10);
+}
+  if(a==sum){
+  //  sum=0;
+   document.write(a+"<br>");
+} 
+ sum=0;
+}
+</script>
+<body>
+</body>
+</html>

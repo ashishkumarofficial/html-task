@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var character=0,words=0;
+        function count(){
+              var x;
+               x=t1.value;
+               character=x.length;
+            t2.value=character;
+            t3.value=0; 
+
+            words=x.trim().split(" ");
+            console.log(words);
+           t3.value=words.length;
+
+        }
+    </script>
+    <style>
+        body {
+           margin: 100px;
+           text-align: center;
+           justify-content: center;
+         
+           
+        }
+       input{
+          border:hidden;
+          border-radius: 10px;
+          background-color: aquamarine;
+        }
+
+        form{
+            height:100px;
+            width:200px;
+            border:2px rgb(10, 3, 3) solid;
+            background-color:aquamarine;
+            padding-top:30px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+       <textarea type="text" id="t1" name="t1" placeholder="Enter hear !" oninput="count();"></textarea> <br/>
+       character:<input type="text" id="t2" name="t2" size="3" value="0" readonly/><br/>
+       words:<input type="text" id="t3" name="t3" size="3" readonly value="0"/> 
+    </form>
+</body>
+</html>

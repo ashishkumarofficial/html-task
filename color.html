@@ -1,0 +1,20 @@
+<html>
+<head>
+
+<script>
+var r;
+var a=parseInt(prompt("enter the any number"));
+document.write("<table border='1'>");
+for(r=1;r<=10;r++){
+if(r%2==0){
+    document.write("<tr style='color:green;'><td>"+a+"</td><td>*</td><td>"+r+"</td><td>=</td><td>"+r*a+"</td></tr>");
+}else{
+    document.write("<tr style='color:red;'><td>"+a+"</td><td>*</td><td>"+r+"</td><td>=</td><td>"+r*a+"</td></tr>");
+}
+}
+document.write("</table>");
+</script>
+</head>
+<body>
+</body>
+</html>

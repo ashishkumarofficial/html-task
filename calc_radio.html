@@ -1,0 +1,41 @@
+<html>
+<head><title></title>
+<script>
+var a,b,c;
+function calc(x){
+    a=parseInt(t1.value);
+    b=parseInt(t2.value);
+if(x=='+'){
+   c=a+b;
+}
+else if(x=='-'){
+   c=a-b;
+}
+else if(x=='*'){
+   c=a*b;
+}
+else if(x=='/'){
+   c=a/b;
+}
+}
+function show(){
+t3.value=c;
+}
+</script>
+</head>
+<body>
+no.1 :<input type="text" id="t1" name="t1" size="3"></br>
+no.2 :<input type="text" id="t2" name="t2" size="3"></br>
+result :<input type="text" id="t3" name="t3" size="3" readonly></br>
+<table border="1">
+<tr><th>
+add :<input type="radio" name="a" onClick="calc('+');" value="+"></th><th>
+sub :<input type="radio" name="a" onClick="calc('-');"value="-"></th><th>
+multi :<input type="radio" name="a" onClick="calc('*');"value="*"></th><th>
+div :<input type="radio" name="a" onClick="calc('/');" value="/"></th>
+</tr>
+</table>
+<input type="submit" onClick="show();" value="submit">
+
+</body>
+</html>

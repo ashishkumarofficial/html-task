@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>max_value</title>
+
+    <script>
+        var arr=new Array();
+        for(var r=0;r<=4;r++){
+            arr[r]=parseInt(prompt("enter "+(r+1)+" number!"));
+        }
+        var c=0,max=new Array();
+        
+        max[0]=arr[0];
+        
+         for(r=0;r<=4;r++){
+            if(max[c]<arr[r]){
+                max[c]=arr[r];
+                c++;
+            }
+         }
+         console.log(arr);
+         c--;
+         console.log(max[c]);
+
+       </script> </head>
+<body>
+   
+</body>
+</html>

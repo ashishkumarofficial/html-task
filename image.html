@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+  var arr=["https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?cs=srgb&dl=pexels-francesco-ungaro-1525041.jpg&fm=jpg",
+          "https://img.freepik.com/free-photo/lone-tree_181624-46361.jpg?size=626&ext=jpg&ga=GA1.2.185446159.1670000768&semt=ais"
+          ,"https://img.freepik.com/premium-photo/fantasy-landscape-with-lonely-tree-shore-lake_936251-1021.jpg?size=626&ext=jpg&ga=GA1.1.185446159.1670000768&semt=ais",
+          "https://img.freepik.com/free-photo/transparent-vivid-autumn-leaves_23-2148239689.jpg?size=626&ext=jpg&ga=GA1.2.185446159.1670000768&semt=ais",
+          "https://img.freepik.com/free-photo/breathtaking-shot-beautiful-stones-turquoise-water-lake-hills-background_181624-12847.jpg?size=626&ext=jpg&ga=GA1.2.185446159.1670000768&semt=ais",
+          "https://img.freepik.com/free-photo/view-old-tree-lake-with-snow-covered-mountains-cloudy-day_181624-28954.jpg?size=626&ext=jpg&ga=GA1.2.185446159.1670000768&semt=ais"];
+        var r=-1;
+        var c="C:\Users\ashis\OneDrive\Desktop\heart.jpg\o";
+        function sowpimage1(n){
+           console.log(c);
+           if(n==1){
+            t1.src=arr[r+n];
+            r++;
+            if(r==arr.length){
+                t1.src=c;   
+            }
+            console.log(r);
+            if(arr.length==r){
+              r=-1;
+            }
+           }
+           if(n==-1){
+            if(r==-1){
+               t1.src=c; 
+                r=0;
+            }
+            t1.src=arr[r+n];
+            r--;
+            console.log(r);
+            if(r==-1){
+                 t1.src=c;
+                r=arr.length;
+            }
+           } 
+        }
+</script>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    p{
+        height: 400px ;
+        width: 400px;
+        border: 1px solid ;
+        background-size:100% 100%;   
+    }
+    input:hover{
+          border-color:lightblue;
+          background-color: aqua;
+          color:rgb(234, 84, 109); 
+    }
+</style>
+<body>
+   <center>
+        <p>
+    <img src="" height="400px" width="400px" id="t1" name="t1" /><br/>
+ </p>
+    <input type="button" onclick="sowpimage1(1);" value="after"/>
+    <input type="button" onclick="sowpimage1(-1);" value="previous"/>
+    </center>  
+</body>
+</html>

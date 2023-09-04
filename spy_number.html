@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<script>
+  var a,r,sq,sum=0,multi=1;
+   a=parseInt(prompt("enter any number"));
+    
+    
+     while(a>0){
+      r=a%10;
+      sum=sum+r;
+      multi=multi*r;
+      a=parseInt(a/10);
+}
+  if(multi==sum){
+   document.write("spy number");
+}else{
+   document.write("not a spy number");
+ }
+</script>
+<body>
+</body>
+</html>

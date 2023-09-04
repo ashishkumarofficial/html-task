@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<script>
+  var a,r,sum=0,multi=1,temp;
+  for(a=1;a<=1000;a++){
+       temp=a;
+      while(temp>0){
+      r=temp%10;
+      sum=sum+r;
+      multi=multi*r;
+      temp=parseInt(temp/10);
+}
+  if(multi==sum){
+   document.write(a+"</br>");
+  }
+  sum=0;
+  multi=1;
+ }
+</script>
+<body>
+</body>
+</html>
